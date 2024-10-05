@@ -81,7 +81,7 @@
 
             <div class="col-md-4 article-card">
                 <div class="card">
-                    <img src="imagenes/imagen1.webp" class="card-img-top" alt="">
+                    <img src="imagen1.webp" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Imane Khelif, la cuestionada campeona olímpica en París 2024</h5>
                         <p class="card-text">La pugilista argelina fue acusada falsamente de ser transgénero tras su combate en cuartos de final contra la italiana Angela Carini.</p>
@@ -95,13 +95,11 @@
                     <img src="imagen4.jpg" class="card-img-top" alt="Irlanda dona EUR 200.000 para proyectos del STDF">
                     <div class="card-body">
                         <h5 class="card-title">Irlanda dona EUR 200.000 para proyectos del STDF</h5>
-                       
                         <p class="card-text">Irlanda aportará EUR 200.000 al Fondo para la Aplicación de Normas y el Fomento del Comercio (STDF).</p>
                         <a href="#" class="btn btn-secondary">Leer más</a>
                     </div>
                 </div>
             </div>
-</h5>
 
             <div class="col-md-4 article-card">
                 <div class="card">
@@ -128,14 +126,14 @@
             </ul>
             <div class="tab-content">
                 <div id="register" class="tab-pane active">
-                    <form>
+                    <form id="registerForm">
                         <div class="form-group">
                             <label for="nombreRegistro">Nombre:</label>
-                            <input type="text" class="form-control" id="nombreRegistro" placeholder="Ingrese su nombre">
+                            <input type="text" class="form-control" id="nombreRegistro" placeholder="Ingrese su nombre" required>
                         </div>
                         <div class="form-group">
                             <label for="correoRegistro">Correo electrónico:</label>
-                            <input type="email" class="form-control" id="correoRegistro" placeholder="Ingrese su correo electrónico">
+                            <input type="email" class="form-control" id="correoRegistro" placeholder="Ingrese su correo electrónico" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Registrarse</button>
                     </form>
@@ -144,11 +142,11 @@
                     <form>
                         <div class="form-group">
                             <label for="correoLogin">Correo electrónico:</label>
-                            <input type="email" class="form-control" id="correoLogin" placeholder="Ingrese su correo electrónico">
+                            <input type="email" class="form-control" id="correoLogin" placeholder="Ingrese su correo electrónico" required>
                         </div>
                         <div class="form-group">
                             <label for="contraseñaLogin">Contraseña:</label>
-                            <input type="password" class="form-control" id="contraseñaLogin" placeholder="Ingrese su contraseña">
+                            <input type="password" class="form-control" id="contraseñaLogin" placeholder="Ingrese su contraseña" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
                     </form>
@@ -158,7 +156,7 @@
 
         <div class="container mt-4" id="contacto">
             <h2>Contacto</h2>
-            <form action="contacto.php" method="POST">
+            <form id="contactForm" action="contacto.php" method="POST">
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" class="form-control" required>
@@ -186,6 +184,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event
 
-</body>
-</html>
