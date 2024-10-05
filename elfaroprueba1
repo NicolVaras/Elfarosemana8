@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .banner {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .article-card {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <h5>¡Bienvenidos a El Faro! Últimas noticias y actualizaciones.</h5>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">El Faro</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Deportes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Negocios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2>Artículos Recientes</h2>
+        <div class="row">
+
+            <div class="col-md-8 article-card">
+                <div class="card">
+                    <img src="imagenes/imagen2.jpeg" class="card-img-top" alt=="Gobierno transfirió más de $ 1 millón para deportistas olímpicos ecuatorianos">
+                    <div class="card-body">
+                        <h5 class="card-title">Gobierno transfirió más de $ 1 millón para deportistas olímpicos ecuatorianos</h5>
+                        <p class="card-text">Ministerio de Economía anunció la entrega de los premios económicos por las medallas recibidas en las Olimpiadas París 2024.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 article-card">
+                <div class="card">
+                    <img src="imagenes/imagen3.avif" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Alegrías y penas del deporte</h5>
+                        <p class="card-text">Es menester que los ministerios, autoridades y demás gente involucrada en el ámbito deportivo hagan acopio y valoren estos triunfos...</p>
+                        <a href="#" class="btn btn-secondary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 article-card">
+                <div class="card">
+                    <img src="imagenes/imagen1.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Imane Khelif, la cuestionada campeona olímpica en París 2024</h5>
+                        <p class="card-text">La pugilista argelina fue acusada falsamente de ser transgénero tras su combate en cuartos de final contra la italiana Angela Carini.</p>
+                        <a href="#" class="btn btn-secondary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 article-card">
+                <div class="card">
+                    <img src="imagenes/imagen4.jpg" class="card-img-top" alt="Irlanda dona EUR 200.000 para proyectos del STDF">
+                    <div class="card-body">
+                        <h5 class="card-title">Irlanda dona EUR 200.000 para proyectos del STDF</h5>
+                       
+                        <p class="card-text">Irlanda aportará EUR 200.000 al Fondo para la Aplicación de Normas y el Fomento del Comercio (STDF).</p>
+                        <a href="#" class="btn btn-secondary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+</h5>
+
+            <div class="col-md-4 article-card">
+                <div class="card">
+                    <img src="imagenes/imagen5.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Se abre el plazo para inscripción en curso de la OMC</h5>
+                        <p class="card-text">Se invita a funcionarios a presentar solicitudes para participar en el Curso Temático sobre Comercio Electrónico.</p>
+                        <a href="#" class="btn btn-secondary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Fin de row -->
+
+        <div class="container mt-4">
+            <h2>Registro / Iniciar Sesión</h2>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#register">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#login">Iniciar Sesión</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="register" class="tab-pane active">
+                    <form>
+                        <div class="form-group">
+                            <label for="nombreRegistro">Nombre:</label>
+                            <input type="text" class="form-control" id="nombreRegistro" placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="correoRegistro">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="correoRegistro" placeholder="Ingrese su correo electrónico">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                    </form>
+                </div>
+                <div id="login" class="tab-pane fade">
+                    <form>
+                        <div class="form-group">
+                            <label for="correoLogin">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="correoLogin" placeholder="Ingrese su correo electrónico">
+                        </div>
+                        <div class="form-group">
+                            <label for="contraseñaLogin">Contraseña:</label>
+                            <input type="password" class="form-control" id="contraseñaLogin" placeholder="Ingrese su contraseña">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </form>
+                </div>
+            </div>
+        </div> <!-- Fin de container de registro/iniciar sesión -->
+
+        <div class="container mt-4" id="contacto">
+            <h2>Contacto</h2>
+            <form action="contacto.php" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div> <!-- Fin de container de contacto -->
+
+    </div> <!-- Fin de container -->
+
+    <!-- Footer -->
+    <footer class="footer text-center mt-4">
+        <div class="container">
+            <p>&copy; 2024 El Faro. Todos los derechos reservados.</p>
+            <p><a href="#" style="color: white;">Política de privacidad</a> | 
+               <a href="#" style="color: white;">Términos de uso</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
