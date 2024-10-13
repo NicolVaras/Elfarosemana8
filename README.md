@@ -1,5 +1,5 @@
-# PHP Starter
+# El Faro
 
-Quickly get started with [PHP](https://www.php.net/) using this starter! PHP is a popular general-purpose scripting language that is especially suited to web development.
+A Pen created on CodePen.io. Original URL: [https://codepen.io/nikky-lag/pen/vYqvrod](https://codepen.io/nikky-lag/pen/vYqvrod).
 
-This starter starts a PHP web server on [localhost:8080](http://localhost:8080).
+Pagina de noticias.
